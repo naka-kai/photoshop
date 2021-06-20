@@ -1,0 +1,63 @@
+@charset 'UTF-8';
+
+@import 'reset.scss';
+
+$sp: 375px;
+$ipad: 768px;
+$spc: 1024px;
+$mpc: 1366px;
+$bpc: 2000px;
+
+@mixin sp {
+  @media (min-width: ($sp)) {
+    @content;
+  }
+}
+
+@mixin ipad {
+  @media (min-width: ($ipad)) {
+    @content;
+  }
+}
+
+@mixin spc {
+  @media (min-width: ($spc)) {
+    @content;
+  }
+}
+
+@mixin mpc {
+  @media (min-width: ($mpc)) {
+    @content;
+  }
+}
+
+@mixin bpc {
+  @media (min-width: ($bpc)) {
+    @content;
+  }
+}
+
+.container {
+  // width: 101.7rem;
+}
+
+html {
+  font-size: 62.5%;
+  /* -> 10px; */
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}

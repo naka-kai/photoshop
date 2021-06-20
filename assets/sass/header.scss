@@ -1,0 +1,167 @@
+@charset 'UTF-8';
+
+@import 'reset.scss';
+@import 'style.scss';
+
+
+.header {
+
+  display: flex;
+  background: linear-gradient(to right, #4a6bb5, hsl(220, 50%, 19%));
+  padding: 2rem;
+  height: 5.5rem;
+  align-items: center;
+
+  @include ipad {
+    height: 8rem;
+  }
+}
+
+.header_logo {
+  img {
+    width: 12rem;
+    height: 2.6rem;
+
+    @include ipad {
+      width: 13.6rem;
+      height: 2.9rem;
+    }
+  }
+}
+
+.header_nav-button {
+  cursor: pointer;
+  z-index: 20;
+  position: relative;
+  width: 2rem;
+  height: 1.6rem;
+  display: inline-block;
+  transition: all .4s;
+  box-sizing: border-box;
+  margin-left: auto;
+
+  @include ipad {
+    display: none;
+  }
+
+  span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    display: inline-block;
+    transition: all .2s;
+    box-sizing: border-box;
+
+    &:nth-last-of-type(1) {
+      top: 0;
+    }
+
+    &:nth-last-of-type(2) {
+      top: 7px;
+    }
+
+    &:nth-last-of-type(3) {
+      bottom: 0;
+    }
+  }
+}
+
+.header_nav-button.active {
+  span {
+    &:nth-last-of-type(1) {
+      transform: translateY(7px) rotate(-45deg);
+    }
+
+    &:nth-last-of-type(2) {
+      opacity: 0;
+    }
+
+    &:nth-last-of-type(3) {
+      transform: translateY(-7px) rotate(45deg);
+    }
+  }
+}
+
+.header_nav-wrap {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  background-color: #4b6cb7;
+  width: 100%;
+  height: 100%;
+  display: none;
+  // visibility: hidden;
+  // opacity: 0;
+  transition: all .2s;
+
+  @include ipad {
+    background-color: transparent;
+    position: static;
+    display: block;
+  }
+}
+
+.header_nav-wrap.open {
+  display: block;
+}
+
+.header_nav-wrap.close {
+  opacity: 0;
+
+  @include ipad {
+    opacity: 1;
+  }
+}
+
+.header_nav {
+  height: 100%;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 13.1rem;
+
+  @include ipad {
+    position: static;
+    overflow: scroll;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 0;
+    margin-left: 2.2rem;
+  }
+}
+
+.header_list-item {
+  display: block;
+  margin-top: 4rem;
+
+  &:last-child {
+    border-right: none;
+  }
+
+  @include ipad {
+    display: inline-block;
+    margin-top: 0;
+    transform: skewX(150deg);
+    border-right: 1px solid #fff;
+  }
+
+  a {
+    @include ipad {
+      display: block;
+      transform: skewX(-150deg);
+      padding: 0 .8rem;
+    }
+  }
+}
+
+.header_list-item-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

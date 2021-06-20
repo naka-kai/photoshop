@@ -1,0 +1,566 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+html {
+  font-size: 62.5%;
+  /* -> 10px; */
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: -webkit-gradient(linear, left top, right top, from(#4a6bb5), to(#182849));
+  background: linear-gradient(to right, #4a6bb5, #182849);
+  padding: 2rem;
+  height: 5.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 768px) {
+  .header {
+    height: 8rem;
+  }
+}
+
+.header_logo img {
+  width: 12rem;
+  height: 2.6rem;
+}
+
+@media (min-width: 768px) {
+  .header_logo img {
+    width: 13.6rem;
+    height: 2.9rem;
+  }
+}
+
+.header_nav-button {
+  cursor: pointer;
+  z-index: 20;
+  position: relative;
+  width: 2rem;
+  height: 1.6rem;
+  display: inline-block;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  .header_nav-button {
+    display: none;
+  }
+}
+
+.header_nav-button span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  display: inline-block;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header_nav-button span:nth-last-of-type(1) {
+  top: 0;
+}
+
+.header_nav-button span:nth-last-of-type(2) {
+  top: 7px;
+}
+
+.header_nav-button span:nth-last-of-type(3) {
+  bottom: 0;
+}
+
+.header_nav-button.active span:nth-last-of-type(1) {
+  -webkit-transform: translateY(7px) rotate(-45deg);
+          transform: translateY(7px) rotate(-45deg);
+}
+
+.header_nav-button.active span:nth-last-of-type(2) {
+  opacity: 0;
+}
+
+.header_nav-button.active span:nth-last-of-type(3) {
+  -webkit-transform: translateY(-7px) rotate(45deg);
+          transform: translateY(-7px) rotate(45deg);
+}
+
+.header_nav-wrap {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  background-color: #4b6cb7;
+  width: 100%;
+  height: 100%;
+  display: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+@media (min-width: 768px) {
+  .header_nav-wrap {
+    background-color: transparent;
+    position: static;
+    display: block;
+  }
+}
+
+.header_nav-wrap.open {
+  display: block;
+}
+
+.header_nav-wrap.close {
+  opacity: 0;
+}
+
+@media (min-width: 768px) {
+  .header_nav-wrap.close {
+    opacity: 1;
+  }
+}
+
+.header_nav {
+  height: 100%;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 13.1rem;
+}
+
+@media (min-width: 768px) {
+  .header_nav {
+    position: static;
+    overflow: scroll;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 0;
+    margin-left: 2.2rem;
+  }
+}
+
+.header_list-item {
+  display: block;
+  margin-top: 4rem;
+}
+
+.header_list-item:last-child {
+  border-right: none;
+}
+
+@media (min-width: 768px) {
+  .header_list-item {
+    display: inline-block;
+    margin-top: 0;
+    -webkit-transform: skewX(150deg);
+            transform: skewX(150deg);
+    border-right: 1px solid #fff;
+  }
+}
+
+@media (min-width: 768px) {
+  .header_list-item a {
+    display: block;
+    -webkit-transform: skewX(-150deg);
+            transform: skewX(-150deg);
+    padding: 0 .8rem;
+  }
+}
+
+.header_list-item-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=header.css.map */
